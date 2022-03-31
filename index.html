@@ -11,16 +11,14 @@
     <body>
         <header>
             <div class="nombre">
-                <h1 class="name">Yesenia González</h1>
-                <h4 class="ocupation">Student Software Engineer</h4>
+                <h1 class="my-name">Yesenia González</h1>
+                <h4 class="my-ocupation">Student Software Engineer</h4>
             </div>   
-            <nav class="nav-link">
-                <ul class="nav-header">              
-                    <li><a href="#home" class="sectiones" onclick="mostrarHome()" >HOME</a></li>
-                    <li><a href="#resume" class="sectiones" onclick="mostrarResume()">RESUME</a></li>
-                    <li><a href="#projects" class="sectiones" onclick="mostrarProjects()" >PROJECTS</a></li>
-                    <li><a href="#contact" class="sectiones" onclick="mostrarContact()" >CONTACT</a></li>
-                </ul>
+            <nav class="nav-header">             
+                <a href="#home" class="sectiones" onclick="mostrarHome()" >HOME</a>
+                <a href="#resume" class="sectiones" onclick="mostrarResume()">RESUME</a>
+                <a href="#projects" class="sectiones" onclick="mostrarProjects()" >PROJECTS</a>
+                <a href="#contact" class="sectiones" onclick="mostrarContact()" >CONTACT</a>
             </nav>
         </header>
             <section id="home">
@@ -28,12 +26,10 @@
                 <div class="about-me">
                     <h2 class="hello">Hello,</h2>
                     <h3 class="abaut-me">a bit about me</h3>
-                    <nav class="nav">
-                        <ul class="enlace-wel">              
-                            <li class="my-resume enlace-welcome"><a href="#resume" class="enlace" onclick="mostrarResume()" >MY RESUME</a></li>
-                            <li class="my-work enlace-welcome"><a href="#projects" class="enlace" onclick="mostrarProjects()" >MY WORK</a></li>
-                            <li class="my-skill enlace-welcome"><a href="#myskill" class="enlace" onclick="mostrarResume()" >MY SKILL</a></li>
-                        </ul>
+                    <nav class="nav-home">
+                        <a href="#resume" class="my-resume enlace" onclick="mostrarResume()" >MY RESUME</a>
+                        <a href="#projects" class="my-work enlace" onclick="mostrarProjects()" >MY WORK</a>
+                        <a href="#myskill" class="my-skill enlace" onclick="mostrarResume()" >MY SKILL</a>
                     </nav>
                     <p>I am student software engineer, I love learning new things, Therefore, I am very interested in learning 
                         about software development since I consider it to be a very good profession and it allows me to enhance my skills, right now I'm learning basic of HTML and CSS, this is one of my projects to start using my knowledge
@@ -41,40 +37,35 @@
                 </div>
             </section>
             <section id="resume">
-                <div>
                     <div>
                         <h3 class="resume-title">RESUME</h3>
-                        <div class="subtitle profesion-section">
-                            <h3 class="subtitle-resume">Professional info​​</h3>
+                        <div class="subtitle">
+                            <h3 class="section-resume">Professional info​​</h3>
                             <p class="paragraph">I am a self-taught developer, I have been working on my own software development projects for about a year</p>
                             <div id="myskill" class="lenguages">
                                 <i class="fa-solid fa-globe"></i>
-                                <h3 class="lenguages lenguages-subtitle"> Languages</h3>
-                                <ul class="lenguages list-lenguages">
-                                    <li class="lenguajes-know">JavaScript</li>
-                                    <li class="lenguajes-know">HTML/CSS</li>                         
+                                <h3 class="lenguages-subtitle"> Languages</h3>
+                                <ul class="list-lenguages">
+                                    <li>JavaScript</li>
+                                    <li>HTML/CSS</li>                         
                                 </ul>
                             </div>
                         </div>      
-                        <div class="subtitle work">
-                            <h3 class="subtitle-resume">Work experience</h3>
+                        <div class="subtitle">
+                            <h3 class="section-resume">Work experience</h3>
                             <p class="paragraph">I have worked developing personal projects such as: tic toe game, overcoming hackerrank challenges, freeCodeCamp projects among others</p>
                         </div>
                         <div class="subtitle certifications">
-                            <h3 class="education subtitle-resume">Education</h3>
-                            <p class="cursos">FreeCodeCamp <br> 2021 - present
-                                <ul class="list-certificactions">
-                                    <li class="certificactions-list"><a class="certificactions-list" href="https://www.freecodecamp.org/certification/YESENIA2012/responsive-web-design" target="blanck">Certificación in Responsive Web Desig</a><br>
-                                        <p>Through this course I learned about the basic things of HTML and CSS and everything that can be achieved in terms of the design of a web page using these two tools, since HTML gives semantic content to the page and CSS gives it semantic content. style to it, which results in an eye-catching and attractive web page or application of thousands of users</p>
-                                    </li><br>
-                                    <li class="certificactions-list"><a class="certificactions-list">JavaScript Algorithms and Data Structures in progress</a>
-                                        <p>In this course I am learning about the basic things of javaScript and how to access the information of arrays and objects and everything that can be done with it, this course is very interesting since it teaches the most important things to know about javaScript such as the scope of variables, how functions work and what can be done with them</p>
-                                    </li>
-                                </ul>
-                            </p>   
+                            <h3 class="section-resume">Education</h3>
+                            <div>
+                                <p class="paragraph">FreeCodeCamp <br> 2021 - present</p>
+                                    <a class="certificactions-link" href="https://www.freecodecamp.org/certification/YESENIA2012/responsive-web-design" target="blanck">Certificación in Responsive Web Desig</a>
+                                    <p class="paragraph">Through this course I learned about the basic things of HTML and CSS and everything that can be achieved in terms of the design of a web page using these two tools, since HTML gives semantic content to the page and CSS gives it semantic content. style to it, which results in an eye-catching and attractive web page or application of thousands of users</p>
+                                    <a class="certificactions-link">JavaScript Algorithms and Data Structures in progress</a>
+                                    <p class="paragraph">In this course I am learning about the basic things of javaScript and how to access the information of arrays and objects and everything that can be done with it, this course is very interesting since it teaches the most important things to know about javaScript such as the scope of variables, how functions work and what can be done with them</p>
+                            </div>
                         </div>
                     </div>
-                </div>
             </section>
             <section id="projects">
                 <div class="section-projects-1">
@@ -83,7 +74,7 @@
                         <div class="project-1">Project | 01</div>
                         <iframe class="video" src="https://www.youtube.com/embed/QPgkHxrz81o" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="name-game"><a href="https://yesenia2012.github.io/TRIKI-GAME/" target="blanck">TIC TAC TOE GAME</a>
+                    <div class="name-game"><a class="a-game" href="https://yesenia2012.github.io/TRIKI-GAME/" target="blanck">TIC TAC TOE GAME</a>
                         <p class="game-explanation">I made the tic tac toe game using the HTML, CSS and JavaScript languages, the game consists of the player who manages to make a row with his pieces wins, the table can have the number of rows and columns that the players want, no has a limit.</p>
                     </div>                   
                 </div>
@@ -91,7 +82,7 @@
             <section id="contact">
                 <h3 class="contact-title">CONTACT</h3>
                 <form class="data">
-                    <p class="p-contact">
+                    <p class="p-form">
                         Looking forward to answering your email
                     </p>
                     <div class="form">
@@ -109,22 +100,17 @@
                   <button type="submit">Submit</button>
                 </form>
                 <nav class="nav-contact">
-                    <ul>
-                        <li class="icon-contact"><a  href="https://twitter.com/yezzegonzalez" target="blanck"><i class="contact-icon fa-brands fa-twitter"></i></a></li>
-                        <li class="icon-contact"><a href="https://github.com/YESENIA2012" target="blanck"><i class="contact-icon fa-brands fa-github"></i></a></li>
-                    </ul>
+                    <a  href="https://twitter.com/yezzegonzalez" target="blanck"><i class="contact-icon fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/YESENIA2012" target="blanck"><i class="contact-icon fa-brands fa-github"></i></a>
                 </nav>
-                <p class="p-contact-2">Cell 320-846-8659 <br>Email ygonzalezp9@uniminuto.edu.co</p>
-                <p></p>
+                <p class="p-my-informacion">Cell 320-846-8659 <br>Email ygonzalezp9@uniminuto.edu.co</p>
             </section> 
         <footer>
             <nav class="nav-footer">
-                <ul class="ul-footer">
-                    <li class="icon-footer"><a class="a-footer" href="https://twitter.com/yezzegonzalez" target="blanck"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                    <li class="icon-footer"><a class="a-footer" href="https://github.com/YESENIA2012" target="blanck"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                    <li class="icon-footer"><a class="a-footer" href="https://www.linkedin.com/in/yesenia-gonzalez-012697181/" target="blanck"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
-                    <li class="icon-footer"><a class="a-footer" href="https://www.freecodecamp.org/YESENIA2012" target="blanck"><i class="fa-brands fa-free-code-camp"></i> freeCodeCamp</a></li>
-                </ul>
+                <a class="a-footer" href="https://twitter.com/yezzegonzalez" target="blanck"><i class="icon fa-brands fa-twitter"></i> Twitter</a>
+                <a class="a-footer" href="https://github.com/YESENIA2012" target="blanck"><i class="icon fa-brands fa-github"></i> GitHub</a>
+                <a class="a-footer" href="https://www.linkedin.com/in/yesenia-gonzalez-012697181/" target="blanck"><i class="icon fa-brands fa-linkedin"></i> Linkedin</a>
+                <a class="a-footer" href="https://www.freecodecamp.org/YESENIA2012" target="blanck"><i class="icon fa-brands fa-free-code-camp"></i> freeCodeCamp</a>
             </nav>
         </footer>
     </body>
