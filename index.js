@@ -1,5 +1,5 @@
 function mostrarHome() {
-  document.getElementById("home").style.display = "flex";
+  document.getElementById("home").style.display = "grid";
   document.getElementById("resume").style.display = "none";
   document.getElementById("projects").style.display = "none";
   document.getElementById("contact").style.display = "none";
@@ -20,7 +20,7 @@ function mostrarProjects() {
 }
 
 function mostrarContact() {
-  document.getElementById("contact").style.display = "flex";
+  document.getElementById("contact").style.display = "grid";
   document.getElementById("home").style.display = "none";
   document.getElementById("resume").style.display = "none";
   document.getElementById("projects").style.display = "none";
