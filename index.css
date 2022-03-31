@@ -447,7 +447,7 @@ button:hover {
     padding-bottom: 20px;
   }
   #projects {
-    width: 80%;
+    width: 85%;
   }
   .enlace {
     color: white;
@@ -460,5 +460,17 @@ button:hover {
   }
   .p-my-informacion {
     left: 70px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav-contact {
+    left: 290px;
+  }
+  .p-my-informacion {
+    left: 290px;
+  }
+  #projects {
+    width: 60%;
   }
 }
