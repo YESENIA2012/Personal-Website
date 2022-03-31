@@ -7,101 +7,120 @@
   --color_6: rgb(139 134 25);
 }
 
+li {
+  list-style: none;
+}
+
 * {
   color: rgb(77, 77, 77);
 }
+
 body {
   background-color: rgb(232, 227, 236);
   margin: 0px;
   font-size: 16px;
 }
 
-li {
-  list-style: none;
-  padding-left: 50px;
-}
-
 a {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
 }
+
+img {
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+section {
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+
+footer {
+  height: 136px;
+  width: 100%;
+  background-color: var(--color_3);
+  margin-bottom: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sectiones {
+  padding-right: 30px;
+}
+
 .sectiones:hover {
   color: var(--color_1);
 }
 
-h1,
-h2,
-h4 {
-  font-weight: bold;
+/*Here I style the header*/
+header {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: center;
+  margin: auto;
+  width: 850px;
+}
+
+.my-name {
+  margin-bottom: 0;
+  font-size: 50px;
+}
+
+.my-ocupation {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*Here I style the home section*/
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  height: 480px;
+  animation: fadeIn 2s;
+}
+
+.abaut-me {
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
 }
 
 .hello {
   font-size: 80px;
   margin: 0;
 }
-.abaut-me {
-  font-size: 60px;
-  margin: 0;
-  font-weight: normal;
-}
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-}
-
-.nav-link,
-ul {
-  display: flex;
-  flex-direction: row;
+.nav-home {
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
   align-items: center;
-  padding: 0;
-}
-
-#home {
-  animation: fadeIn 2s;
-}
-
-.name {
-  margin-bottom: 0;
-  font-size: 50px;
-}
-.ocupation {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-section {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  width: 70%;
-  margin: auto;
-  padding: 10px;
-  height: 480px;
-}
-
-img {
-  margin-right: 60px;
-  border-radius: 50%;
-}
-
-.enlace-welcome {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0px auto;
-  padding: 3%;
-}
-
-.enlace-welcome:hover {
+  font-size: 13px;
   cursor: pointer;
+}
+
+.enlace {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: auto;
+  padding: 3%;
+  color: white;
 }
 
 .my-resume {
@@ -122,50 +141,25 @@ img {
   background-color: var(--color_5);
 }
 
-.my-skill {
-  background-color: var(--color_2);
-  animation: fadeIn 2s;
-}
-
 .my-skill:hover {
   background-color: var(--color_6);
 }
 
-.enlace {
-  color: white;
-}
-
+/*Here I style the resume section*/
 #resume {
-  display: grid;
-  grid-template-rows: (3, 80px);
-  height: 1000px;
-  justify-content: center;
   width: 80%;
-  padding-left: 300px;
   display: none;
   animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  margin-right: 230px;
+  margin-bottom: 20px;
 }
 
 .resume-title {
   border-bottom: 1px solid gray;
-  width: 800px;
+  width: 650px;
 }
 
-.profesion-section {
-  display: flex;
-  flex-direction: column;
-}
-
+/*I give style to the title of the resume and projects section*/
 .resume-title,
 .projects {
   font-size: 90px;
@@ -173,43 +167,47 @@ img {
   margin: 0;
 }
 
-.subtitle-resume {
+.subtitle {
+  border-bottom: 1px solid gray;
+  display: grid;
+  grid-template-columns: 4fr 12fr;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 200px;
+}
+
+.section-resume {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   background: var(--color_3);
-  display: flex;
+  display: grid;
   align-items: center;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
   margin: 0px auto;
   padding: 3%;
   color: white;
   margin-right: 10%;
-  margin-left: 0px;
-}
-.subtitle {
-  border-bottom: 1px solid gray;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 200px;
-  padding: auto;
 }
 
 .paragraph {
-  width: 500px;
+  text-align: justify;
+  width: 90%;
+  margin-left: 15px;
 }
 
 #myskill {
   display: grid;
   position: absolute;
-  left: 900px;
+  left: 780px;
   margin: 0px 0px 25px calc((100% - 980px) * 0.5);
   margin-top: 50px;
   animation: fadeIn 2s;
+}
+
+.my-skill {
+  background-color: var(--color_2);
 }
 
 .lenguages-subtitle {
@@ -217,74 +215,49 @@ img {
   padding-bottom: 20px;
 }
 
-.list-lenguages,
-.list-certificactions {
-  display: block;
-}
-
-.lenguajes-know {
-  padding-left: 0;
+.list-lenguages {
+  padding: 0;
 }
 
 .fa-globe {
-  text-align: center;
-  font-size: 35px;
-  width: 40px;
-  height: 40px;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background: var(--color_1);
-  display: flex;
   margin: 0px auto;
-  padding: 5%;
+  padding: 3%;
   color: white;
 }
 
-.work {
-  position: relative;
-}
-
-.certificactions-list {
+.certificactions-link {
   display: block;
+  text-align: left;
+  padding-left: 15px;
+  margin-top: inherit;
 }
 
-.education {
-  margin: 0;
-  position: absolute;
-  margin-top: 20px;
-  width: 80px;
-  height: 80px;
-  margin-left: 30px;
-}
-
-.cursos {
-  padding-left: 280px;
-  padding-top: 50px;
-}
-.list-certificactions {
-  padding-left: 230px;
+.certificactions-list:hover {
+  color: var(--color_1);
 }
 
 .certifications {
   height: auto;
-  display: grid;
-  align-items: baseline;
+  align-items: flex-start;
+  margin-top: 30px;
   border-bottom: none;
 }
 
+/*Here I style the projects section*/
 #projects {
-  height: auto;
   width: 60%;
-  display: grid;
-  grid-template-columns: (2, 80px);
-  justify-content: center;
   display: none;
   animation: fadeIn 2s;
 }
 
 .projects-title {
   border-bottom: 1px solid grey;
-  width: 900px;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: normal;
   margin-bottom: 30px;
   margin-top: 0px;
@@ -299,7 +272,7 @@ img {
 
 .project-1 {
   width: 100px;
-  height: 91px;
+  height: 100px;
   border-radius: 50%;
   background: var(--color_1);
   display: flex;
@@ -311,27 +284,28 @@ img {
 }
 
 .name-game {
-  display: flex;
-  flex-direction: column;
-  position: relative;
   margin-left: 550px;
   margin-top: 140px;
   border-top: 1px solid gray;
-  width: 40%;
   padding-top: 30px;
+}
+
+.a-game {
+  justify-content: flex-start;
+}
+
+.a-game:hover {
+  color: var(--color_1);
 }
 
 .section-projects-1 {
   height: 550px;
 }
 
+/*Here I style the contact section*/
 #contact {
-  height: 500px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  grid-template-columns: 4fr 5fr;
   width: 60%;
-  justify-content: flex-start;
   display: none;
   animation: fadeIn 2s;
 }
@@ -340,18 +314,36 @@ img {
   font-size: 80px;
   font-weight: normal;
   height: 350px;
-  margin-top: 30px;
   margin-right: 80px;
-}
-
-.p-contact {
-  padding-bottom: 10px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .data {
-  height: 350px;
+  height: 390px;
+}
+
+.nav-contact {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  position: absolute;
+  margin-top: 90px;
+}
+
+i.contact-icon.fa-brands {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+
+.p-form {
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 input {
@@ -385,49 +377,28 @@ button {
   font-weight: bold;
 }
 
-.fa-brands {
-  width: 60px;
-  height: 60px;
+.icon {
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background: var(--color_1);
   color: var(--color_3);
   margin-right: 10%;
-  margin-left: 0px;
   font-size: 20px;
 }
 
-i.contact-icon.fa-brands {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: black;
-  color: white;
-  text-align: center;
-  display: grid;
-  align-items: center;
-}
-
-i.fa-brands {
+/*Here I center the icons in their container elements*/
+i.fa-brands,
+i.fa-solid.fa-globe {
   display: grid;
   text-align: center;
   align-items: center;
 }
 
-.icon-contact {
-  padding-left: 0;
-  padding-right: 10px;
-}
-
-.nav-contact {
+.p-my-informacion {
   position: absolute;
-  margin-top: 100px;
-}
-
-.p-contact-2 {
-  position: absolute;
-  margin-top: 210px;
+  margin-top: 190px;
   font-size: 15px;
-  padding-left: 10px;
 }
 
 button:hover {
@@ -435,31 +406,34 @@ button:hover {
   cursor: pointer;
 }
 
-footer {
-  height: 136px;
-  width: 100%;
-  background-color: var(--color_3);
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
+/*Here I style the footer section*/
 .nav-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  padding-left: 70px;
   justify-content: center;
 }
 
-.ul-footer {
-  color: white;
-}
-
 .a-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  width: 80%;
   color: white;
   align-items: baseline;
 }
 
 .icon-footer {
   padding-right: 70px;
+}
+
+/*Here the animation of each section was made*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
