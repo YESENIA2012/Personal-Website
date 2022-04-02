@@ -238,7 +238,7 @@ header {
   margin-top: inherit;
 }
 
-.certificactions-list:hover {
+.certificactions-link:hover {
   color: var(--color_1);
 }
 
