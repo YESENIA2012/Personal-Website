@@ -252,6 +252,7 @@ header {
 /*Here I style the projects section*/
 #projects {
   width: 60%;
+  height: auto;
   display: none;
   animation: fadeIn 2s;
 }
@@ -284,7 +285,7 @@ header {
   margin-left: 550px;
 }
 
-.name-game {
+.name-game, .to-do-list {
   margin-left: 550px;
   margin-top: 140px;
   border-top: 1px solid gray;
@@ -300,7 +301,16 @@ header {
 }
 
 .section-projects-1 {
-  height: 550px;
+  height: 500px;
+  border-bottom: 1px solid gray;
+}
+
+.project2{
+  margin-top: 40px;
+}
+
+.to-do-list{
+  margin-bottom: 30px;
 }
 
 /*Here I style the contact section*/
