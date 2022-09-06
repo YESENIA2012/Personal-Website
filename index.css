@@ -260,9 +260,8 @@ header {
   border-bottom: 1px solid grey;
   font-size: 80px;
   font-weight: normal;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   margin-top: 0px;
-  padding-bottom: 25px;
 }
 
 .video {
@@ -284,9 +283,10 @@ header {
   margin-left: 550px;
 }
 
+/* other line */
 .tictoe-game, .to-do-list, .random-quote-page {
   margin-left: 550px;
-  margin-top: 140px;
+  margin-top: 120px;
   border-top: 1px solid gray;
   padding-top: 30px;
 }
@@ -299,18 +299,13 @@ header {
   color: var(--color_1);
 }
 
-
-.section-projects{
-  height: 500px;
-  border-bottom: 1px solid gray;
-}
-
+/* border */
 .container-project{
-  height: 400px;
+  margin-top: 40px;
   border-bottom: 1px solid gray;
 }
 
-.project-2, .project-3{
+.container-project-last{
   margin-top: 40px;
 }
 
