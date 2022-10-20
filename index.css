@@ -284,7 +284,13 @@ header {
 }
 
 /* other line */
-.tictoe-game, .to-do-list, .random-quote-page, .markdown-previewer {
+.tictoe-game,
+.to-do-list,
+.random-quote-page,
+.markdown-previewer,
+.drum-machine,
+.pomodoro-clock,
+.calculator {
   margin-left: 550px;
   margin-top: 120px;
   border-top: 1px solid gray;
@@ -300,18 +306,23 @@ header {
 }
 
 /* border */
-.container-project{
+.container-project {
   margin-top: 40px;
   border-bottom: 1px solid gray;
 }
 
-.container-project-last{
+.container-project-last {
   margin-top: 40px;
   margin-bottom: 10px;
 }
 
-.to-do-list, .random-quote-page, .markdown-previewer{
-  margin-bottom: 30px;
+.to-do-list,
+.random-quote-page,
+.markdown-previewer,
+.drum-machine,
+.pomodoro-clock,
+.calculator {
+  margin-bottom: 40px;
 }
 
 /*Here I style the contact section*/

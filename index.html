@@ -2,144 +2,389 @@
 <html>
   <head>
     <title>Sitio Web Personal</title>
-    <meta charset="uft-8">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="uft-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <script src="index.js"></script>
   </head>
   <body>
-      <header>
-        <div class="nombre">
-          <h1 class="my-name">Yesenia González</h1>
-          <h4 class="my-ocupation">Student Software Engineer</h4>
-        </div>   
-        <nav class="nav-header">             
-          <a href="#home" class="sectiones" onclick="mostrarHome()" >HOME</a>
-          <a href="#resume" class="sectiones" onclick="mostrarResume()">RESUME</a>
-          <a href="#projects" class="sectiones" onclick="mostrarProjects()" >PROJECTS</a>
-          <a href="#contact" class="sectiones" onclick="mostrarContact()" >CONTACT</a>
+    <header>
+      <div class="nombre">
+        <h1 class="my-name">Yesenia González</h1>
+        <h4 class="my-ocupation">Student Software Engineer</h4>
+      </div>
+      <nav class="nav-header">
+        <a href="#home" class="sectiones" onclick="mostrarHome()">HOME</a>
+        <a href="#resume" class="sectiones" onclick="mostrarResume()">RESUME</a>
+        <a href="#projects" class="sectiones" onclick="mostrarProjects()"
+          >PROJECTS</a
+        >
+        <a href="#contact" class="sectiones" onclick="mostrarContact()"
+          >CONTACT</a
+        >
+      </nav>
+    </header>
+    <section id="home">
+      <img src="68444001.jpeg" alt="My face" />
+      <div class="about-me">
+        <h2 class="hello">Hello,</h2>
+        <h3 class="abaut-me">a bit about me</h3>
+        <nav class="nav-home">
+          <a href="#resume" class="my-resume enlace" onclick="mostrarResume()"
+            >MY RESUME</a
+          >
+          <a href="#projects" class="my-work enlace" onclick="mostrarProjects()"
+            >MY WORK</a
+          >
+          <a href="#myskill" class="my-skill enlace" onclick="mostrarResume()"
+            >MY SKILL</a
+          >
         </nav>
-      </header>
-      <section id="home">
-        <img src="68444001.jpeg" alt="My face">
-        <div class="about-me">
-          <h2 class="hello">Hello,</h2>
-          <h3 class="abaut-me">a bit about me</h3>
-          <nav class="nav-home">
-            <a href="#resume" class="my-resume enlace" onclick="mostrarResume()" >MY RESUME</a>
-            <a href="#projects" class="my-work enlace" onclick="mostrarProjects()" >MY WORK</a>
-            <a href="#myskill" class="my-skill enlace" onclick="mostrarResume()" >MY SKILL</a>
-          </nav>
-          <p>I am student software engineer, I love learning new things, Therefore, I am very interested in learning 
-          about software development since I consider it to be a very good profession and it allows me to enhance my skills, right now I'm learning basic of HTML and CSS, this is one of my projects to start using my knowledge
-          </p>
-        </div>
-      </section>
-      <section id="resume">
-        <div>
-          <h3 class="resume-title">RESUME</h3>
-          <div class="subtitle">
+        <p>
+          I am student software engineer, I love learning new things, Therefore,
+          I am very interested in learning about software development since I
+          consider it to be a very good profession and it allows me to enhance
+          my skills, right now I'm learning basic of HTML and CSS, this is one
+          of my projects to start using my knowledge
+        </p>
+      </div>
+    </section>
+    <section id="resume">
+      <div>
+        <h3 class="resume-title">RESUME</h3>
+        <div class="subtitle">
           <h3 class="section-resume">Professional info​​</h3>
-          <p class="paragraph">I am a self-taught developer, I have been working on my own software development projects for about a year</p>
+          <p class="paragraph">
+            I am a self-taught developer, I have been working on my own software
+            development projects for about a year
+          </p>
           <div id="myskill" class="lenguages">
             <i class="fa-solid fa-globe"></i>
-            <h3 class="lenguages-subtitle"> Languages</h3>
+            <h3 class="lenguages-subtitle">Languages</h3>
             <ul class="list-lenguages">
               <li>JavaScript</li>
-              <li>HTML/CSS</li>                         
+              <li>HTML/CSS</li>
             </ul>
           </div>
-          </div>      
-          <div class="subtitle">
-              <h3 class="section-resume">Work experience</h3>
-              <p class="paragraph">I have worked developing personal projects such as: tic toe game, overcoming hackerrank challenges, freeCodeCamp projects among others</p>
-          </div>
-          <div class="subtitle certifications">
-            <h3 class="section-resume">Education</h3>
-            <div>
-              <p class="paragraph">FreeCodeCamp <br> 2021 - present</p>
-              <a class="certificactions-link" href="https://www.freecodecamp.org/certification/YESENIA2012/responsive-web-design" target="blanck">Certificación in Responsive Web Desig</a>
-              <p class="paragraph">Through this course I learned about the basic things of HTML and CSS and everything that can be achieved in terms of the design of a web page using these two tools, since HTML gives semantic content to the page and CSS gives it semantic content. style to it, which results in an eye-catching and attractive web page or application of thousands of users</p>
-              <a class="certificactions-link" href="https://www.freecodecamp.org/certification/YESENIA2012/javascript-algorithms-and-data-structures" target="blanck">JavaScript Algorithms and Data Structures in progress</a>
-              <p class="paragraph">In this course I am learning about the basic things of javaScript and how to access the information of arrays and objects and everything that can be done with it, this course is very interesting since it teaches the most important things to know about javaScript such as the scope of variables, how functions work and what can be done with them</p>
-            </div>
+        </div>
+        <div class="subtitle">
+          <h3 class="section-resume">Work experience</h3>
+          <p class="paragraph">
+            I have worked developing personal projects such as: tic toe game,
+            overcoming hackerrank challenges, freeCodeCamp projects among others
+          </p>
+        </div>
+        <div class="subtitle certifications">
+          <h3 class="section-resume">Education</h3>
+          <div>
+            <p class="paragraph">
+              FreeCodeCamp <br />
+              2021 - present
+            </p>
+            <a
+              class="certificactions-link"
+              href="https://www.freecodecamp.org/certification/YESENIA2012/responsive-web-design"
+              target="blanck"
+              >Certificación in Responsive Web Desig</a
+            >
+            <p class="paragraph">
+              Through this course I learned about the basic things of HTML and
+              CSS and everything that can be achieved in terms of the design of
+              a web page using these two tools, since HTML gives semantic
+              content to the page and CSS gives it semantic content. style to
+              it, which results in an eye-catching and attractive web page or
+              application of thousands of users
+            </p>
+            <a
+              class="certificactions-link"
+              href="https://www.freecodecamp.org/certification/YESENIA2012/javascript-algorithms-and-data-structures"
+              target="blanck"
+              >JavaScript Algorithms and Data Structures in progress</a
+            >
+            <p class="paragraph">
+              In this course I am learning about the basic things of javaScript
+              and how to access the information of arrays and objects and
+              everything that can be done with it, this course is very
+              interesting since it teaches the most important things to know
+              about javaScript such as the scope of variables, how functions
+              work and what can be done with them
+            </p>
           </div>
         </div>
-      </section>
-      <section id="projects">
-        <div class="section-projects">
-          <h3 class="sections-title">LATEST PROJECTS</h3>  
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-projects">
+        <h3 class="sections-title">LATEST PROJECTS</h3>
+      </div>
+      <div class="container-project">
+        <div class="project-1">
+          <div class="num-project">Project | 01</div>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/SchRry2Kzd0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="container-project">
-          <div class="project-1">
-            <div class="num-project">Project | 01</div>
-            <iframe class="video" src="https://www.youtube.com/embed/SchRry2Kzd0" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="tictoe-game"><a class="link-page" href="https://yesenia2012.github.io/TRIKI-GAME/" target="blanck">TIC TAC TOE GAME</a>
-            <p>I made the tic tac toe game using the HTML, CSS and JavaScript languages, the game consists of the player who manages to make a row with his pieces wins, the table can have the number of rows and columns that the players want, no has a limit.</p>
-          </div>
-        </div>             
-        <div class="container-project">
-          <div class="project-2">
-            <div class="num-project">Project | 02</div>
-            <iframe class="video" src="https://www.youtube.com/embed/A93Bwt3TYN0" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="to-do-list"><a class="link-page" href=" https://yesenia2012.github.io/pendings-list/" target="blanck">TO DO LIST</a>
-            <p>I made the to do list page using the HTML, CSS and JavaScript languages, The page consists of entering the pending list that the user has and moving them to other columns depending on the status of the task.</p>
-          </div>
-        </div> 
-        <div class="container-project">
-            <div class="project-3">
-              <div class="num-project">Project | 03</div>
-              <iframe class="video" src="https://www.youtube.com/embed/dlg8IMuFmf4" frameborder="0" allowfullscreen></iframe>                 
-            </div>
-            <div class="random-quote-page"><a class="link-page" href="https://yesenia2012.github.io/random-quote-machine/release/index.html" target="blanck">QUOTE RANDOM GENERATOR </a>
-              <p>This project was made with technologies such as javaScript, CSS and the React library, the page consists of showing a random phrase when I click on the new appointment button, this will cause a change in the phrase and in the colors of the page</p>
-            </div>
-        </div> 
-        <div class="container-project-last">
-            <div class="project-4">
-              <div class="num-project">Project | 03</div>
-              <iframe class="video" src="https://www.youtube.com/embed/HWVZr-9vsNQ" frameborder="0" allowfullscreen></iframe>                
-            </div>
-            <div class="markdown-previewer"><a class="link-page" href="https://yesenia2012.github.io/Markdown-Previewer/release/index.html" target="blanck">MARKDOWN PREVIEWER</a>
-              <p>The Markdown Preview project was made with technologies such as HTML, CSS, JAVASCRIT, and the REACT library was used. In this project I implement a code editor, where you can type in code and visualize it on other component.</p>
-            </div>
+        <div class="tictoe-game">
+          <a
+            class="link-page"
+            href="https://yesenia2012.github.io/TRIKI-GAME/"
+            target="blanck"
+            >TIC TAC TOE GAME</a
+          >
+          <p>
+            I made the tic tac toe game using the HTML, CSS and JavaScript
+            languages, the game consists of the player who manages to make a row
+            with his pieces wins, the table can have the number of rows and
+            columns that the players want, no has a limit.
+          </p>
         </div>
-      </section>
-      <section id="contact">
-        <h3 class="contact-title">CONTACT</h3>
-        <form class="data">
-          <p class="p-form">Looking forward to answering your email</p>
-          <div class="form">
-            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
-          </div>
-          <div class="form">
-            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
-          </div>
-          <div class="form">
-            <input type="tel" name="tel" id="tel"placeholder="Enter your Phone"/>
-          </div>
-          <div class="form">
-            <textarea id="comments" class="input-textarea" name="comment" placeholder="Type your messagge here..."></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-        <nav class="nav-contact">
-          <a  href="https://twitter.com/yezzegonzalez" target="blanck"><i class="contact-icon fa-brands fa-twitter"></i></a>
-          <a href="https://github.com/YESENIA2012" target="blanck"><i class="contact-icon fa-brands fa-github"></i></a>
-        </nav>
-        <p class="p-my-informacion">Cell 320-846-8659 <br>Email ygonzalezp9@uniminuto.edu.co</p>
-      </section> 
+      </div>
+      <div class="container-project">
+        <div class="project-2">
+          <div class="num-project">Project | 02</div>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/A93Bwt3TYN0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="to-do-list">
+          <a
+            class="link-page"
+            href=" https://yesenia2012.github.io/pendings-list/"
+            target="blanck"
+            >TO DO LIST</a
+          >
+          <p>
+            I made the to do list page using the HTML, CSS and JavaScript
+            languages, The page consists of entering the pending list that the
+            user has and moving them to other columns depending on the status of
+            the task.
+          </p>
+        </div>
+      </div>
+      <div class="container-project">
+        <div class="project-3">
+          <div class="num-project">Project | 03</div>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/dlg8IMuFmf4"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="random-quote-page">
+          <a
+            class="link-page"
+            href="https://yesenia2012.github.io/random-quote-machine/release/index.html"
+            target="blanck"
+            >QUOTE RANDOM GENERATOR
+          </a>
+          <p>
+            This project was made with technologies such as javaScript, HTML,
+            CSS and the React library, the page consists of showing a random
+            phrase when I click on the new appointment button, this will cause a
+            change in the phrase and in the colors of the page
+          </p>
+        </div>
+      </div>
+      <div class="container-project">
+        <!-- FALTA VIDEO -->
+        <div class="project-4">
+          <div class="num-project">Project | 04</div>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/4QV-DPp6pN0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <!-- FALTA VIDEO -->
+        </div>
+        <div class="drum-machine">
+          <a
+            class="link-page"
+            href="https://yesenia2012.github.io/drum-machine/release/index.html"
+            target="blanck"
+            >DRUM MACHINE</a
+          >
+          <p>
+            This project was made with technologies such as javaScript, HTML,
+            CSS and the React library, The page contains a keyboard, if we press
+            either with our keyboard or with the mouse the letters, we will hear
+            a sound
+          </p>
+        </div>
+      </div>
+      <div class="container-project">
+        <div class="project-5">
+          <div class="num-project">Project | 05</div>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/uaftvhC5i84"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <!-- FALTA VIDEO -->
+        </div>
+        <div class="pomodoro-clock">
+          <a
+            class="link-page"
+            href="https://yesenia2012.github.io/chronometer-project/release/index.html"
+            target="blanck"
+            >POMODORO CLOCK</a
+          >
+          <p>
+            This project was made with technologies such as javaScript, HTML,
+            CSS and the React library. It is a timer that divides time into
+            intervals, this allows a person to take active breaks in the
+            activities they perform.
+          </p>
+        </div>
+      </div>
+      <div class="container-project">
+        <div class="project-6">
+          <div class="num-project">Project | 06</div>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/FWjdyMZne-I"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <!-- FALTA VIDEO -->
+        </div>
+        <div class="calculator">
+          <a
+            class="link-page"
+            href="https://yesenia2012.github.io/calculator-project/release/index.html"
+            target="blanck"
+            >CALCULATOR</a
+          >
+          <p>
+            This project was made with technologies such as javaScript, HTML,
+            CSS and the React library. This project is a calculator that
+            performs the basic operations, such as adding, subtracting,
+            multiplying and dividing.
+          </p>
+        </div>
+      </div>
+      <div class="container-project-last">
+        <div class="project-7">
+          <div class="num-project">Project | 06</div>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/HWVZr-9vsNQ"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="markdown-previewer">
+          <a
+            class="link-page"
+            href="https://yesenia2012.github.io/Markdown-Previewer/release/index.html"
+            target="blanck"
+            >MARKDOWN PREVIEWER</a
+          >
+          <p>
+            The Markdown Preview project was made with technologies such as
+            HTML, CSS, JAVASCRIT, and the REACT library was used. In this
+            project I implement a code editor, where you can type in code and
+            visualize it on other component.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h3 class="contact-title">CONTACT</h3>
+      <form class="data">
+        <p class="p-form">Looking forward to answering your email</p>
+        <div class="form">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form">
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Enter your Phone"
+          />
+        </div>
+        <div class="form">
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Type your messagge here..."
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <nav class="nav-contact">
+        <a href="https://twitter.com/yezzegonzalez" target="blanck"
+          ><i class="contact-icon fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://github.com/YESENIA2012" target="blanck"
+          ><i class="contact-icon fa-brands fa-github"></i
+        ></a>
+      </nav>
+      <p class="p-my-informacion">
+        Cell 320-846-8659 <br />Email ygonzalezp9@uniminuto.edu.co
+      </p>
+    </section>
     <footer>
       <nav class="nav-footer">
-        <a class="a-footer" href="https://twitter.com/yezzegonzalez" target="blanck"><i class="icon fa-brands fa-twitter"></i> Twitter</a>
-        <a class="a-footer" href="https://github.com/YESENIA2012" target="blanck"><i class="icon fa-brands fa-github"></i> GitHub</a>
-        <a class="a-footer" href="https://www.linkedin.com/in/yesenia-gonzalez-012697181/" target="blanck"><i class="icon fa-brands fa-linkedin"></i> Linkedin</a>
-        <a class="a-footer" href="https://www.freecodecamp.org/YESENIA2012" target="blanck"><i class="icon fa-brands fa-free-code-camp"></i> freeCodeCamp</a>
+        <a
+          class="a-footer"
+          href="https://twitter.com/yezzegonzalez"
+          target="blanck"
+          ><i class="icon fa-brands fa-twitter"></i> Twitter</a
+        >
+        <a
+          class="a-footer"
+          href="https://github.com/YESENIA2012"
+          target="blanck"
+          ><i class="icon fa-brands fa-github"></i> GitHub</a
+        >
+        <a
+          class="a-footer"
+          href="https://www.linkedin.com/in/yesenia-gonzalez-012697181/"
+          target="blanck"
+          ><i class="icon fa-brands fa-linkedin"></i> Linkedin</a
+        >
+        <a
+          class="a-footer"
+          href="https://www.freecodecamp.org/YESENIA2012"
+          target="blanck"
+          ><i class="icon fa-brands fa-free-code-camp"></i> freeCodeCamp</a
+        >
       </nav>
     </footer>
   </body>
 </html>
-
