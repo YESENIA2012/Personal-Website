@@ -18,7 +18,7 @@ li {
 body {
   background-color: rgb(232, 227, 236);
   margin: 0px;
-  font-size: 16px;
+  font-size: 18px;
   display: grid;
 }
 
@@ -52,6 +52,8 @@ footer {
 }
 
 .sectiones {
+  font-weight: 400;
+  font-size: 22px;
   padding-right: 30px;
 }
 
@@ -65,7 +67,7 @@ header {
   grid-template-columns: 2fr 2fr;
   justify-content: center;
   margin: auto;
-  width: 850px;
+  width: 70%;
 }
 
 .my-name {
@@ -82,13 +84,14 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 
 /*Here I style the home section*/
 #home {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 65%;
+  width: 70%;
   height: 480px;
   animation: fadeIn 2s;
 }
@@ -109,7 +112,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 130px);
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 13px;
   cursor: pointer;
 }
@@ -141,6 +144,10 @@ header {
   background-color: var(--color_5);
 }
 
+.instroduction-me {
+  margin-top: 30px;
+}
+
 .my-skill:hover {
   background-color: var(--color_6);
 }
@@ -162,7 +169,7 @@ header {
 /*I give style to the title of the resume and projects section*/
 .resume-title,
 .projects {
-  font-size: 90px;
+  font-size: 40px;
   font-weight: normal;
   margin: 0;
 }
@@ -258,7 +265,7 @@ header {
 
 .sections-title {
   border-bottom: 1px solid grey;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: normal;
   margin-bottom: 0;
   margin-top: 0px;
@@ -284,17 +291,10 @@ header {
 }
 
 /* other line */
-.tictoe-game,
-.to-do-list,
-.random-quote-page,
-.markdown-previewer,
-.drum-machine,
-.pomodoro-clock,
-.calculator {
-  margin-left: 550px;
-  margin-top: 120px;
+.description-project {
   border-top: 1px solid gray;
   padding-top: 30px;
+  margin: 120px 0 40px 550px;
 }
 
 .link-page {
@@ -316,15 +316,6 @@ header {
   margin-bottom: 10px;
 }
 
-.to-do-list,
-.random-quote-page,
-.markdown-previewer,
-.drum-machine,
-.pomodoro-clock,
-.calculator {
-  margin-bottom: 40px;
-}
-
 /*Here I style the contact section*/
 #contact {
   grid-template-columns: 4fr 5fr;
@@ -334,7 +325,7 @@ header {
 }
 
 .contact-title {
-  font-size: 80px;
+  font-size: 40px;
   font-weight: normal;
   height: 350px;
   margin-right: 80px;
