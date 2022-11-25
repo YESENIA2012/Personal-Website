@@ -13,6 +13,7 @@ li {
 
 * {
   color: rgb(77, 77, 77);
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -51,13 +52,13 @@ footer {
   justify-content: space-around;
 }
 
-.sectiones {
+.sections {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 26px;
   padding-right: 30px;
 }
 
-.sectiones:hover {
+.sections:hover {
   color: var(--color_1);
 }
 
@@ -84,7 +85,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /*Here I style the home section*/
@@ -92,7 +93,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 70%;
-  height: 480px;
+  height: auto;
   animation: fadeIn 2s;
 }
 
